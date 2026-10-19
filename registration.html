@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+Author: Mxolisi Thabiso Mthiyane
+Date Created: 29 September 2026
+File Name: registration.html
+-->
+
+<!-- Head section -->
+<head>
+	<title>Hydration Nation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="StyleSheet/styles.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+</head>
+
+<!-- Body section -->
+<body>
+	<div id="container">
+		
+		<!-- Header area displaying header content -->
+		<header>
+			<h1 class="header">Hydration Nation</h1>
+			<a href="index.html"><img src="images/hydration-nation-logo.png" class="logo" alt="Hydration Nation logo" height="100" width="180"></a>
+		</header>
+	
+		<!-- Navigation area displaying navigation links to other pages -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li><a href="staff.html">Staff</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<!-- Main area displaying content for the main area -->
+		<main>
+			<div id="form">
+				<h2>Client Registration</h2>
+				<form class="form-grid"><!-- Start Form -->
+					<fieldset>
+						<legend>Personal Information</legend>
+						<label for="pName">Preferred Name:</label>
+						<input type="text" id="pName" name="pName" required>
+						
+						<label for="fName">Full Name (ID):</label>
+						<input type="text" id="fName" name="fName" required>
+						
+						<label for="sName">Surname:</label>
+						<input type="text" id="sName" name="sName" required>
+						
+						<label for="idNumber">ID Number:</label>
+						<input type="text" id="idNumber" name="idNumber" required>
+						
+						<label for="work-tel">Work Tel:</label>
+						<input type="tel" id="work-tel" name="work-tel" required>
+						
+						<label for="phone">Cellphone Number:</label>
+						<input type="tel" name="phone" autocomplete="phone" required>
+						
+						<label for="email">Email:</label>
+						<input type="email" name="email" autocomplete="email" required>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Addresses</legend>
+						<label for="hAddress">Home Address:</label>
+						<input type="text" id="hAddress" name="hAddress" required>
+						
+						<label for="pAddress">Postal Address:</label>
+						<input type="text" id="pAddress" placeholder="Postal Address" required>
+						<input type="text" id="city" placeholder="city">
+						<input type="text" id="postal" placeholder="Postal Code">
+					</fieldset>	
+					
+					<fieldset>
+						<legend>Additional Information</legend>
+						<label id="source-label" for="hearing-source">Where did you hear about Hydration Nation?</label>
+						<select name="source-label" id="source-label">
+							<option>Saw on side of road</option>
+							<option>Word of mouth</option>
+							<option>Internet search</option>
+							<option>Advertising</option>
+						</select>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Credit Card Information</legend>
+						<label for="nCard">Name on Card:</label>
+						<input type="text" id="nCard" name="nCard" required>
+						
+						<label for="card-type">Credit Card Type:</label>
+						<select id="card-type">
+							<option>Visa</option>
+							<option>Mastercard</option>
+						</select>
+						
+						<label for="exp-month">Expiration Month:</label>
+						<select id="month" name="exp-month">
+							<option value="01">January</option>
+							<option value="02">February</option>
+							<option value="03">March</option>
+							<option value="04">April</option>
+							<option value="05">May</option>
+							<option value="06">June</option>
+							<option value="07">July</option>
+							<option value="08">August</option>
+							<option value="09">September</option>
+							<option value="10">October</option>
+							<option value="11">November</option>
+							<option value="12">December</option>
+						</select>
+						
+						<label for="exp-year"></label>
+						<select id="year" name="exp-year">
+							<option value="2024">2024</option>
+							<option value="2025">2025</option>
+							<option value="2026">2026</option>
+							<option value="2027">2027</option>
+							<option value="2028">2028</option>
+							<option value="2029">2029</option>
+						</select>
+						
+						<label for="cvc">CVC:</label>
+						<input type="text" name="cvc" id="cvcNumber" maxlength="4" required>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Account Information</legend>
+						<label for="user-name">Username:</label>
+						<input type="text" id="user-name" name="user-name" required>
+						
+						<label for="password">Password:</label>
+						<input Type="text" id="password" name="password" maxlength="12" required>
+						
+						<label for="confirmP">Confirm Password:</label>
+						<input type="text" id="confirmP" name="confirmP" maxlength="12" required>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Products Interests</legend>
+						<label for="aquelle"><input type="checkbox" name="info" id="aquelle" value="Aquelle-Sparkling Water">Aquelle-Sparkling Water</label>
+						<label for="sprite"><input type="checkbox" name="info" id="sprite" value="Sprite">Sprite</label>
+						<label for="coke"><input type="checkbox" name="info" id="coke" value="Coca-Cola">Coca-Cola</label>
+						<label for="fall"><input type="checkbox" name="info" id="fall" value="Fall-Sparkling">Fall-Sparkling</label>
+						<label for="allProducts"><input type="checkbox" name="info" id="allProducts" value="All Products">All Products</label>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Additional Info.</legend>
+						
+						<label for="questions">What questions or comments do you have for us?</label>
+						<textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+					</fieldset>
+						<button type="submit" id="submit" value="Submit" class="btn">Submit</button>
+				</form><!-- End Form -->
+			</div>
+		</main>
+		
+		<!-- Footer area displaying content for footer area -->
+		<footer>
+			<p>&copy; Copyright 2026. All Rights Reserved.</p>
+			<p><a href="mailto:mxolisithwala221@gmail.com">&#9993; mxolisithwala221@gmail.com</a></p>
+			<p><a href="tel:0670159548">&#9742; (+27) 67-0159-548</a></p>
+		</footer>
+	</div>
+</body>
+</html>
+	
+
+
+	
